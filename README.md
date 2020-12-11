@@ -44,3 +44,9 @@ Backend asssesment for second closet
             {"name":"Sofa","length":"6","height":"4","width":"3","weight":"100","value":"500"}]}`
 
 4. GET `/api/customer/list` Get list of all customers 
+
+
+# Notes
+- For discounts with no limit client passes in -1 `"quantity":"-1"` 
+- Order matters for the order of limited discounts you enter in payload
+
