@@ -12,12 +12,13 @@ require "capistrano/deploy"
 # require "capistrano/scm/svn"
 # install_plugin Capistrano::SCM::Svn
 # or
-require 'capistrano/puma'
 require "capistrano/scm/git"
 # require 'capistrano/rails'
 # require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'
 require 'capistrano/rbenv'
+require 'capistrano/puma'
+
 install_plugin Capistrano::SCM::Git
 install_plugin Capistrano::Puma
 
