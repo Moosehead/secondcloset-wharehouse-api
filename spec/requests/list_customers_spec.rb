@@ -4,9 +4,9 @@ require 'rails_helper'
 
 RSpec.describe 'GET list of all customers ', type: :request do
 let!(:customers) { create_list(:customer,10) }
-  describe 'get /customer/list' do
+  describe 'get /api/customer/list' do
     context 'when the request is valid' do
-        before { get '/customer/list' }
+        before { get '/api/customer/list' }
         it 'returns list of customers' do
             # Note `json` is a custom helper to parse JSON responses
             expect(json).not_to be_empty

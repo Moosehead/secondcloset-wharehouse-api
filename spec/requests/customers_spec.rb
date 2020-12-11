@@ -61,7 +61,7 @@ let!(:charge_fees) { create(:charge_fee) }
     let(:valid_attributes) { { value:20} }
 
     context 'when the request is valid' do
-      before { post '/customer/fee', params: valid_attributes }
+      before { post '/api/customer/fee', params: valid_attributes }
       it 'creates a new fee' do
         expect(json['value']).to eq(20)
       end

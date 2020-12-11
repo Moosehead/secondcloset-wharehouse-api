@@ -5,7 +5,7 @@ require 'rails_helper'
 RSpec.describe 'Creates new customer', type: :request do
 let!(:charge_fees) { create(:charge_fee) }
 
-  describe 'POST /customer/create' do
+  describe 'POST api/customer/create' do
     # valid payload
 
     let(:valid_attributes1) { 
@@ -17,7 +17,7 @@ let!(:charge_fees) { create(:charge_fee) }
     }
 
     context 'when the request is valid with just discount param' do
-      before { post '/customer/create', params: valid_attributes1 }
+      before { post '/api/customer/create', params: valid_attributes1 }
 
       it 'creates a new customer record' do
         expect(json['name']).to eq('A')
@@ -33,7 +33,7 @@ let!(:charge_fees) { create(:charge_fee) }
     end
 
     context 'when the request is valid with multiple discount parameters' do
-      before { post '/customer/create', params: valid_attributes2 }
+      before { post '/api/customer/create', params: valid_attributes2 }
   
       it 'creates a new customer record' do
         expect(json['name']).to eq('B')
@@ -62,7 +62,7 @@ let!(:charge_fees) { create(:charge_fee) }
     end
 
     context 'when the request is invalid' do
-      before { post '/customer/create', params: { name: 'A', discount: [{value:10,quantity:100}]}  }
+      before { post '/api/customer/create', params: { name: 'A', discount: [{value:10,quantity:100}]}  }
 
       it 'returns status code 422' do
         expect(response).to have_http_status(422)
