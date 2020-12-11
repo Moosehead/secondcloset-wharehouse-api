@@ -1,5 +1,6 @@
 # Load DSL and set up stages
 require "capistrano/setup"
+require 'capistrano/puma'
 
 # Include default deployment tasks
 require "capistrano/deploy"
@@ -18,6 +19,7 @@ require "capistrano/scm/git"
 # require 'capistrano/passenger'
 require 'capistrano/rbenv'
 install_plugin Capistrano::SCM::Git
+install_plugin Capistrano::Puma
 
 set :rbenv_type, :user
 set :rbenv_ruby, '2.7.2'
