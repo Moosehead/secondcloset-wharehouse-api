@@ -86,6 +86,9 @@ test:
 #
 production:
   <<: *default
-  database: wh_api_production
-  username: wh_api
-  password: <%= ENV['WH_API_DATABASE_PASSWORD'] %>
+  encoding: utf8
+  database: secondcloset # Which you have entered you creating database
+  username: moosamaster # db master username
+  password: moosa123 # db master password
+  host: moosa-test-db.cqipocdqehvz.us-east-1.rds.amazonaws.com   # db instance entrypoint
+  port: 5432   
