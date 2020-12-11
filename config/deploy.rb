@@ -4,6 +4,7 @@ lock "~> 3.14.1"
 set :application, "secondcloset-wharehouse-api"
 set :repo_url, "git@github.com:Moosehead/secondcloset-wharehouse-api.git"
 set :user,'deploy'
+set :branch,'main'
 
 
 # Default branch is :master
