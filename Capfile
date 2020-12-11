@@ -1,6 +1,5 @@
 # Load DSL and set up stages
 require "capistrano/setup"
-require 'capistrano/puma'
 
 # Include default deployment tasks
 require "capistrano/deploy"
@@ -13,6 +12,7 @@ require "capistrano/deploy"
 # require "capistrano/scm/svn"
 # install_plugin Capistrano::SCM::Svn
 # or
+require 'capistrano/puma'
 require "capistrano/scm/git"
 # require 'capistrano/rails'
 # require 'capistrano/rails/migrations'
