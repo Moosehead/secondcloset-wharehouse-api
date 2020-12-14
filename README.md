@@ -60,6 +60,7 @@ Customer D
 
 # Notes
 - For discounts with no limit client passes in -1 `"quantity":"-1"` 
+- Enter percentages in their decimal form
 - Order matters for the order of limited discounts you enter in payload
 - Using Amazon RDS PSQL as database so don't worry about migrations/db setup
 
