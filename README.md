@@ -51,6 +51,7 @@ Customer D
 
 3. POST `/api/customer/add/:customer_id` Get quote of items for customer with ID in the url
 - body payload example
+
 ` {"items":[{"name":"Fridge","length":"3","height":"16","width":"4","weight":"300","value":"1000"},
             {"name":"Sofa","length":"6","height":"4","width":"3","weight":"100","value":"500"},
             {"name":"Fridge","length":"3","height":"16","width":"4","weight":"300","value":"1000"},
