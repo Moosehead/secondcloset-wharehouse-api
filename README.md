@@ -39,8 +39,8 @@ Customer D
 
 `{
     "name":"D",
-    "discount":[{"value":"0.05","quantity":"2"},
-                {"value":"0.10","quantity":"2"},
+    "discount":[{"value":"0.05","quantity":"100"},
+                {"value":"0.10","quantity":"100"},
                 {"value":"0.15","quantity":"-1"}],
     "charge_volume":"2"
 }`
