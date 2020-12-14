@@ -44,6 +44,7 @@ Customer D
                 {"value":"0.15","quantity":"-1"}],
     "charge_volume":"2"
 }`
+
 2. POST `/api/customer/fee` Update new fee
 - body payload example
 `{"value":"20"}`
