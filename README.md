@@ -13,18 +13,28 @@ Backend asssesment for second closet
 # API URLS
 1. POST `/api/customer/create` Creates customer 
 - body payload example according to the assessment
+Customer A
 `{
     "name":"A",
     "discount":[ {"value":"0.10","quantity":"-1"}]
 }`
+
+Customer B
+
 `{
     "name":"B",
     "charge_volume":"1"
 }`
+
+Customer C
+
 `{
     "name":"C",
     "charge_value":"0.05"
 }`
+
+Customer D
+
 `{
     "name":"D",
     "discount":[{"value":"0.05","quantity":"2"},
