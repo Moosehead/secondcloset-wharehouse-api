@@ -18,7 +18,6 @@ class CustomerController < ApplicationController
 
     #add items to customer id
     def add
-        #keep running track of quote
         #get most recent charge fee 
         base_fee_rate = get_latest_fee #in dollars
 

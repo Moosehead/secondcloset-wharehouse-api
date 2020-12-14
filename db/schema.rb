@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_10_021602) do
+ActiveRecord::Schema.define(version: 2020_12_14_053027) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 2020_12_10_021602) do
     t.index ["customer_id"], name: "index_discounts_on_customer_id"
   end
 
-  add_foreign_key "charge_values", "customers"
-  add_foreign_key "charge_volumes", "customers"
-  add_foreign_key "discounts", "customers"
+  add_foreign_key "charge_values", "customers", on_delete: :cascade
+  add_foreign_key "charge_volumes", "customers", on_delete: :cascade
+  add_foreign_key "discounts", "customers", on_delete: :cascade
 end
