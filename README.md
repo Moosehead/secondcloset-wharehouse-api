@@ -13,18 +13,30 @@ Backend asssesment for second closet
 # API URLS
 1. POST `/api/customer/create` Creates customer 
 - body payload example according to the assessment
+
+Customer A
+
 `{
     "name":"A",
     "discount":[ {"value":"0.10","quantity":"-1"}]
 }`
+
+Customer B
+
 `{
     "name":"B",
     "charge_volume":"1"
 }`
+
+Customer C
+
 `{
     "name":"C",
     "charge_value":"0.05"
 }`
+
+Customer D
+
 `{
     "name":"D",
     "discount":[{"value":"0.05","quantity":"2"},
@@ -32,6 +44,7 @@ Backend asssesment for second closet
                 {"value":"0.15","quantity":"-1"}],
     "charge_volume":"2"
 }`
+
 2. POST `/api/customer/fee` Update new fee
 - body payload example
 `{"value":"20"}`
@@ -48,6 +61,7 @@ Backend asssesment for second closet
 
 # Notes
 - For discounts with no limit client passes in -1 `"quantity":"-1"` 
+- Enter percentages in their decimal form
 - Order matters for the order of limited discounts you enter in payload
 - Using Amazon RDS PSQL as database so don't worry about migrations/db setup
 
