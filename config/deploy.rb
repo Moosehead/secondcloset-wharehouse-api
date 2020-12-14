@@ -75,8 +75,8 @@ namespace :puma do
   end
 
   before :start, :make_dirs
-  before :start, 'deploy:migrate'
-  before :restart, 'deploy:migrate'
+  # before :start, 'deploy:migrate'
+  # before :restart, 'deploy:migrate'
 end
 
 desc 'Invoke a rake command on the remote server'
@@ -136,8 +136,8 @@ end
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :web, %w{deploy@your ip}
-role :app, %w{deploy@your ip}
+role :web, %w{deploy@178.128.235.223}
+role :app, %w{deploy@178.128.235.223}
 
 set :migration_role, :app
 
@@ -151,4 +151,4 @@ set :branch, :staging
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'your ip', user: 'deploy', roles: %w{web app}
+server '178.128.235.223', user: 'deploy', roles: %w{web app}
