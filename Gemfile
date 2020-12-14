@@ -18,18 +18,18 @@ gem 'puma', '~> 4.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-gem 'capistrano', '~> 3.11'
-gem 'capistrano-rails', '~> 1.4'
-gem 'capistrano-passenger', '~> 0.2.0'
-gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
+gem 'capistrano', '~> 3.11', require: false
+gem 'capistrano-rails', '~> 1.4', require: false
+gem 'capistrano-passenger', '~> 0.2.0', require: false
+gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4', require: false
 # gem 'puma', '3.8.1' 
 
 
- gem 'capistrano-rvm'
- gem 'capistrano3-puma'
- gem 'capistrano-sidekiq'
- gem 'ed25519', '~> 1.2'
- gem 'bcrypt_pbkdf', '~> 1'
+ gem 'capistrano-rvm', require: false
+ gem 'capistrano3-puma', require: false
+ gem 'capistrano-sidekiq', require: false
+ gem 'ed25519', '~> 1.2', require: false
+ gem 'bcrypt_pbkdf', '~> 1', require: false
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
